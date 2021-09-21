@@ -2,13 +2,12 @@ name: Github Pages Deploy
 
 on:
   push:
-    branch:
+    branches:
       - "main"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [15.x]
@@ -20,7 +19,7 @@ jobs:
       - name: Install and build
         run: npm install && npm run build
 
-      - name: Test
+      - name: Run tests
         run: npm run test
 
       - name: Deploy
