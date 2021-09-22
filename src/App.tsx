@@ -2,8 +2,11 @@ import React from "react";
 import "./App.css";
 
 function App() {
+  console.log(process.env.NODE_ENV);
   return (
-    <main>
+    <main
+      className={process.env.NODE_ENV === "development" ? "debug-screens" : ""}
+    >
       Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
       <div className="attribution">
         <p>
