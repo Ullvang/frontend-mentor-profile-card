@@ -5,3 +5,11 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+span {
+  display: block;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem !important;
+  margin-bottom: 0.3rem;
+}
