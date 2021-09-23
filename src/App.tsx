@@ -9,7 +9,7 @@ function App() {
       <Background />
       <main
         className={`min-h-screen w-screen px-4 flex justify-between 
-        items-center flex-col text-center
+        items-center flex-col text-center container m-auto
         ${process.env.NODE_ENV === "development" ? " debug-screens" : ""}`}
       >
         <div></div>
